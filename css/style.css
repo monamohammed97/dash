@@ -6,12 +6,14 @@
 
 @font-face {
   font-family: Neue_montreal;
-  src: url(../fonts/Neue-montreal/NeueMontreal-Bold.otf),
-    url(../fonts/Neue-montreal/NeueMontreal-BoldItalic.otf),
-    url(../fonts/Neue-montreal/NeueMontreal-Italic.otf),
-    url(../fonts/Neue-montreal/NeueMontreal-Light.otf),
-    url(../fonts/Neue-montreal/NeueMontreal-Medium.otf),
-    url(../fonts/Neue-montreal/NeueMontreal-Regular.otf),
+  src: url(../fonts/Neue_montreal/NeueMontreal-Bold.otf),
+    url(../fonts/Neue_montreal/NeueMontreal-BoldItalic.otf),
+    url(../fonts/Neue_montreal/NeueMontreal-Italic.otf),
+    url(../fonts/Neue_montreal/NeueMontreal-Light.otf),
+    url(../fonts/Neue_montreal/NeueMontreal-LightItalic.otf),
+    url(../fonts/Neue_montreal/NeueMontreal-Medium.otf),
+    url(../fonts/Neue_montreal/NeueMontreal-MediumItalic.otf),
+    url(../fonts/Neue_montreal/NeueMontreal-Regular.otf),
 }
 
 @font-face {
@@ -50,6 +52,12 @@ img {
 header {
   height: 80px;
   border-bottom: 1px solid #E3E3E3;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler {
+  border: 0;
+  box-shadow: none;
 }
 
 .nav-item a {
@@ -373,7 +381,7 @@ input {
 }
 
 .box-info .font-32 {
-  letter-spacing: -4px;
+  letter-spacing: -8px;
 }
 
 .top-title {
@@ -391,4 +399,149 @@ input {
 [dir='rtl'] .box-info {
   bottom: 5%;
   right: -10%;
+}
+
+/* toogle */
+nav:not(:has(.show)) .fa-xmark {
+  display: none;
+}
+
+.fa-xmark {
+  color: #fff;
+}
+
+nav:has(.show) .navbar-toggler-icon {
+  display: none;
+}
+
+header:has(.show) .btn-lets {
+  background-color: #fff;
+  color: #000;
+}
+
+header:has(.show) .navbar .nav-item a {
+  color: #fff !important;
+}
+
+header:has(.show) .navbar {
+  align-items: baseline;
+}
+
+header:has(.show) {
+  background-color: #000;
+  height: 100vh;
+  color: #fff;
+}
+
+/* 
+ */
+.without-slider {
+  display: none;
+}
+
+.fill-back {
+  padding: 0 !important;
+}
+
+[dir='rtl'] .hero1 {
+  left: 0;
+}
+
+/* .hero1 {
+  width: 275.456px;
+  height: 274.773px;
+  position: absolute;
+  z-index: 1;
+  top: 40px;
+}
+
+.hero2 {
+  width: 138.543px;
+  height: 172.017px;
+  position: absolute;
+  left: 42%;
+}
+
+.hero3 {
+  position: absolute;
+  width: 145.715px;
+  height: 151.531px;
+  right: 0;
+  top: 20px;
+}
+
+.hero4 {
+  position: absolute;
+  width: 232.752px;
+  height: 82.269px;
+  top: 200px;
+  right: 0;
+}
+
+.hero5 {
+  position: absolute;
+  width: 373.903px;
+  height: 253.636px;
+  bottom: 0;
+  left: -11px;
+}
+
+.hero6 {
+  position: absolute;
+  width: 145.715px;
+  height: 253.636px;
+  bottom: 0;
+  right: 0;
+} */
+.hero1 {
+  width: 51%;
+  height: 50%;
+  position: absolute;
+  z-index: 1;
+  top: 7%;
+}
+
+.hero2 {
+  width: 25%;
+  height: 31%;
+  position: absolute;
+  left: 42%;
+}
+
+.hero3 {
+  position: absolute;
+  width: 26%;
+  height: 27%;
+  right: 0;
+  top: 20px;
+}
+
+.hero4 {
+  position: absolute;
+  width: 42%;
+  height: 15%;
+  top: 200px;
+  right: 0;
+}
+
+.hero5 {
+  position: absolute;
+  width: 68%;
+  height: 46%;
+  bottom: 0;
+  left: -11px;
+}
+
+.hero6 {
+  position: absolute;
+  width: 26%;
+  height: 45%;
+  bottom: 0;
+  right: 0;
+}
+
+.container-images {
+  position: relative;
+  width: 547px;
+  height: 558px;
 }
