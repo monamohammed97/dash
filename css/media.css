@@ -1,9 +1,319 @@
-@media (max-width: 1399.98px) {}
+@media (max-width: 1399.98px) {
+  h1 {
+    font-size: 45px;
+  }
 
-@media (max-width: 1199.98px) {}
+  .font-48 {
+    font-size: 42px;
+  }
 
-@media (max-width: 991.98px) {}
+  .font-46 {
+    font-size: 40px;
+  }
 
-@media (max-width: 767.98px) {}
+  .w-30 {
+    width: 39%;
+  }
 
-@media (max-width: 575.98px) {}
+  .card-business {
+    margin: 60px 0;
+  }
+
+  .fill-back {
+    height: 580px;
+  }
+
+
+
+}
+
+@media (max-width: 1199.98px) {
+  .join img {
+    object-fit: cover;
+  }
+
+  h1 {
+    font-size: 40px;
+    width: 100%;
+  }
+
+  .font-48 {
+    font-size: 37px;
+  }
+
+  .font-46 {
+    font-size: 35px;
+  }
+
+  .hero-section p {
+    width: 90%;
+  }
+
+  .logos div {
+    height: 60px;
+    width: 100px;
+  }
+
+  .card-business {
+    margin-top: 40px;
+  }
+
+  .font-20 {
+    font-size: 18px;
+  }
+
+  .py-6 {
+    padding: 5rem 0;
+  }
+
+  .font-22 {
+    font-size: 18px;
+  }
+
+  .who-serve .font-32 {
+    font-size: 28px;
+  }
+
+  .fill-back {
+    height: 512px;
+  }
+
+}
+
+@media (max-width: 991.98px) {
+  .w-30 {
+    width: 55%;
+  }
+
+  .join-us .position-relative {
+    margin: auto !important;
+  }
+
+  .card-serve {
+    width: calc(90%/2);
+  }
+
+  .w-40 {
+    width: 68%;
+    margin: 0px !important;
+    margin-bottom: 1rem !important;
+  }
+
+  .fill-back {
+    height: 409px;
+  }
+
+  .slick-prev:before,
+  .slick-next:before {
+    font-size: 25px;
+  }
+
+  .business .slick-next {
+    height: 10px;
+  }
+
+  .py-6 {
+    padding: 4rem 0;
+  }
+
+  .clients .slick-prev,
+  .clients .slick-next {
+    width: 46px;
+    height: 46px;
+  }
+
+  footer .logo {
+    height: 35px;
+  }
+
+  footer .last a,
+  footer .last p {
+    font-size: 14px;
+  }
+
+  .font-18 {
+    font-size: 16px;
+  }
+
+  footer p.font-18 {
+    width: 90%;
+  }
+
+  .clients .img-client {
+    height: 90px;
+    width: 110px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .fill-back {
+    height: 300px;
+  }
+
+  .font-22 {
+    font-size: 16px;
+  }
+
+  .who-serve .font-32 {
+    font-size: 26px;
+  }
+
+  [dir='ltr'] .box-info {
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  [dir='rtl'] .box-info {
+    bottom: 5%;
+    right: 50%;
+    transform: translateX(50%);
+  }
+
+
+}
+
+@media (max-width: 575.98px) {
+  .container-images {
+    width: 327px;
+    height: 329px;
+  }
+
+  .hero1 {
+    width: 164.669px;
+    height: 162.008px;
+  }
+
+  .hero2 {
+    width: 82.822px;
+    height: 101.422px;
+    left: 142px;
+  }
+
+  .hero3 {
+    width: 87.109px;
+    height: 89.344px;
+  }
+
+  .hero4 {
+    width: 139.141px;
+    height: 48.506px;
+    top: 116px;
+  }
+
+  .hero5 {
+    width: 221.521px;
+    height: 149.545px;
+    left: -6px;
+  }
+
+  .hero6 {
+    width: 87.109px;
+    height: 149.545px;
+  }
+
+  .fill-back {
+    height: 218px;
+  }
+
+  .who-serve .font-32 {
+    font-size: 24px;
+  }
+
+  .card-serve {
+    width: 100%;
+  }
+
+  .business-slick,
+  .clients-slick {
+    display: none;
+  }
+
+  .without-slider {
+    display: flex;
+  }
+
+  section {
+    padding: 4rem 2rem !important;
+  }
+
+  .py-6 {
+    padding: 0;
+  }
+
+  .business .without-slider .px-2 {
+    padding: 0 !important;
+  }
+
+  h1 {
+    font-size: 35px;
+  }
+
+  .logos div {
+    height: auto;
+    width: auto;
+    max-height: 70px;
+  }
+
+  .logos {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .w-80,
+  .w-30 {
+    width: 100%;
+  }
+
+  .font-48 {
+    font-size: 32px;
+  }
+
+  .font-46 {
+    font-size: 30px;
+  }
+
+  .card-business {
+    margin: 20px 0;
+    min-height: auto;
+  }
+
+  .font-20 {
+    font-size: 16px;
+  }
+
+  .clients .img-client {
+    height: 100px;
+    width: 130px;
+  }
+
+  .clients .without-slider {
+    justify-content: space-evenly;
+  }
+
+  .last .container {
+    flex-wrap: wrap-reverse;
+    padding: 0 2rem;
+  }
+
+  .last .container p,
+  .last .container a,
+  .last .container div {
+    width: 100%;
+  }
+
+  .last .container p,
+  .last .container a {
+    margin: 0 10px;
+  }
+
+  .last .container a.mx-4 {
+    margin: 0 !important;
+  }
+
+  .join-us {
+    padding: 0 !important;
+  }
+
+
+}
