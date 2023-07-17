@@ -27,6 +27,11 @@
     url(../fonts/Articulat/OTF/ArticulatCF-ExtraBold.otf),
 }
 
+body {
+  overflow-x: hidden;
+
+}
+
 .font_nenu {
   font-family: Neue_montreal;
 }
