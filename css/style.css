@@ -520,3 +520,16 @@ input {
 img.white {
   display: none;
 }
+
+.dropdown-toggle::after {
+  display: none;
+}
+
+.btn-lang.navbar-nav {
+  min-width: auto !important;
+}
+
+.btn-lang.navbar-nav .dropdown-item img {
+  height: 35px;
+  width: auto;
+}
