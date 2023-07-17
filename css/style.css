@@ -330,9 +330,7 @@ footer .last {
   width: calc(90%/3);
 }
 
-.fill-back {
-  height: 665px;
-}
+
 
 select,
 input {
@@ -401,37 +399,6 @@ input {
   right: -10%;
 }
 
-/* toogle */
-nav:not(:has(.show)) .fa-xmark {
-  display: none;
-}
-
-.fa-xmark {
-  color: #fff;
-}
-
-nav:has(.show) .navbar-toggler-icon {
-  display: none;
-}
-
-header:has(.show) .btn-lets {
-  background-color: #fff;
-  color: #000;
-}
-
-header:has(.show) .navbar .nav-item a {
-  color: #fff !important;
-}
-
-header:has(.show) .navbar {
-  align-items: baseline;
-}
-
-header:has(.show) {
-  background-color: #000;
-  height: 100vh;
-  color: #fff;
-}
 
 /* 
  */
@@ -544,4 +511,12 @@ header:has(.show) {
   position: relative;
   width: 547px;
   height: 558px;
+}
+
+.fill-back {
+  height: 840px;
+}
+
+img.white {
+  display: none;
 }
