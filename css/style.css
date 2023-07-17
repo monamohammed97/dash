@@ -27,6 +27,11 @@
     url(../fonts/Articulat/OTF/ArticulatCF-ExtraBold.otf),
 }
 
+body {
+  overflow-x: hidden;
+
+}
+
 .font_nenu {
   font-family: Neue_montreal;
 }
@@ -519,4 +524,17 @@ input {
 
 img.white {
   display: none;
+}
+
+.dropdown-toggle::after {
+  display: none;
+}
+
+.btn-lang.navbar-nav {
+  min-width: auto !important;
+}
+
+.btn-lang.navbar-nav .dropdown-item img {
+  height: 35px;
+  width: auto;
 }
