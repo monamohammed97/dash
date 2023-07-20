@@ -37,21 +37,21 @@
       <div class="container h-100" data-aos="fade-down">
         <nav class="navbar navbar-expand-lg h-100">
           <div class="container-fluid">
-            <a class="navbar-brand p-0" href="#">
+            <a class="navbar-brand p-0" href="../index.html">
               <img src="../images/Dash Mark 1.png" alt="Dash">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
-              aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                    aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarScroll">
               <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
-                <li class="nav-item"><a class="text-decoration-none active" href="#">About us</a></li>
-                <li class="nav-item"><a class="text-decoration-none" href="#">Driver Registration</a></li>
-                <li class="nav-item"><a class="text-decoration-none" href="#">Driver Registration</a></li>
+                <li class="nav-item"><a class="text-decoration-none" href="./about.html" data-lang="en" id="nav_about_us_txt">About us</a></li>
+                <li class="nav-item"><a class="text-decoration-none" href="./joinUs.html" data-lang="en" id="nav_driver_Registration_txt">Driver Registration</a></li>
+                <li class="nav-item"><a class="text-decoration-none active" href="./partnerWithUs.html" data-lang="en" id="nav_Partner_Registration_txt">Partner Registration </a></li>
               </ul>
-              <button class="btn btn-lang p-0">EN</button>
-              <button class="btn btn-lets">Let's Collaborate</button>
+              <button class="btn btn-lang p-0" id="translateButton"></button>
+              <button class="btn btn-lets" id="explore-text" data-lang="en">Let's Collaborate</button>
             </div>
           </div>
         </nav>
@@ -62,45 +62,72 @@
     <!-- form partner with us-->
     <section class="d-flex flex-wrap-reverse join-us">
       <div class="col-12 col-lg-7 pb-3 pb-lg-0" data-aos="fade-right">
-        <form class="col-10 col-md-7 m-auto py-6">
-          <h2 class="font-40 mb-3 mb-md-4">Partner with us to reach your full potential.</h2>
+        <form class="col-10 col-md-7 m-auto py-6" action="https://api.web3forms.com/submit" method="POST">
+          <input type="hidden" name="access_key" value="ea20a3d2-48c2-43d3-a426-551ba7995354">
+          <input type="hidden" name="from_name" value="partner with us">
+          <h2 class="font-40 mb-3 mb-md-4" data-lang="en" id="partner_with_us_full_txt">Partner with us to reach your full potential.</h2>
           <div class="mb-3">
-            <label for="" class="font-14 d-block mb-2 fw-600">Full Name</label>
-            <input type="text" placeholder="Full Name">
+            <label for="input_name_txt" class="font-14 d-block mb-2 fw-600" data-lang="en" id="partner_full_name_txt">Full Name</label>
+            <input type="text" placeholder="Full Name" data-lang="en" id="input_name_txt" name="full name">
           </div>
 
           <div class="mb-3">
-            <label for="" class="font-14 d-block mb-2 fw-600">Email*</label>
-            <input type="email" placeholder="Email">
+            <label for="input_email_txt" class="font-14 d-block mb-2 fw-600" data-lang="en" id="partner_email_txt">Email</label>
+            <input type="email" placeholder="Email" data-lang="en" id="input_email_txt" name="email">
           </div>
           <div class="mb-3">
-            <label for="" class="font-14 d-block mb-2 fw-600">Company name*</label>
-            <input type="text" placeholder="Enter your company name ">
+            <label for="input_company_txt" class="font-14 d-block mb-2 fw-600" data-lang="en" id="partner_company_txt">Company name</label>
+            <input type="text" placeholder="Enter your company name " data-lang="en" id="input_company_txt" name="company name">
           </div>
           <div class="mb-3">
-            <label for="" class="font-14 d-block mb-2 fw-600">Contact Mobile Number</label>
-            <input type="text" placeholder=" Mobile Number">
+            <label for="input_contact_mobile_txt" class="font-14 d-block mb-2 fw-600" data-lang="en" id="partner_contact_txt">Contact Mobile Number</label>
+            <input type="text" placeholder=" Mobile Number" data-lang="en" id="input_contact_mobile_txt" name="mobile number">
           </div>
 
           <div class="mb-3">
-            <label for="" class="font-14 d-block mb-2 fw-600">City</label>
-            <select class="form-select">
-              <option selected>Select City</option>
-              <option value="1">One</option>
-              <option value="2">Two</option>
-              <option value="3">Three</option>
+            <label for="partner_select_group_city_txt" class="font-14 d-block mb-2 fw-600" data-lang="en" id="partner_city_txt">City</label>
+            <select class="form-select" name="city" id="partner_select_group_city_txt">
+              <option selected data-lang="en" id="partner_select_city_txt" disabled>Select City</option>
+              <option value="الرياض">الرياض</option>
+              <option value="جدة">جدة</option>
+              <option value="مكة المكرمة">مكة المكرمة</option>
+              <option value="المدينة المنورة">المدينة المنورة</option>
+              <option value="الدمام">الدمام</option>
+              <option value="الطائف">الطائف</option>
+              <option value="تبوك">تبوك</option>
+              <option value="بريدة">بريدة</option>
+              <option value="أبها">أبها</option>
+              <option value="خميس مشيط">خميس مشيط</option>
+              <option value="الخبر">الخبر</option>
+              <option value="الظهران">الظهران</option>
+              <option value="نجران">نجران</option>
+              <option value="حائل">حائل</option>
+              <option value="الجبيل">الجبيل</option>
+              <option value="الهفوف">الهفوف</option>
+              <option value="الأحساء">الأحساء</option>
+              <option value="ينبع">ينبع</option>
+              <option value="القصيم">القصيم</option>
+              <option value="جيزان">جيزان</option>
+              <option value="الخرج">الخرج</option>
             </select>
           </div>
           <div class="mb-3">
-            <label for="" class="font-14 d-block mb-2 fw-600">Business Type</label>
-            <select class="form-select">
-              <option selected>Select business type</option>
-              <option value="1">One</option>
-              <option value="2">Two</option>
-              <option value="3">Three</option>
+            <label for="partner_select_business_type_group_txt" class="font-14 d-block mb-2 fw-600" data-lang="en" id="partner_business_type_txt">Business Type</label>
+            <select class="form-select" name="business type" id="partner_select_business_type_group_txt">
+              <option selected data-lang="en" id="partner_select_business_type_txt" disabled>Select business type</option>
+              <option value="تقديم الطعام">تقديم الطعام</option>
+              <option value="مطعم">مطعم</option>
+              <option value="أسطول توصيل">أسطول توصيل</option>
+              <option value="مطبخ سحابي">مطبخ سحابي</option>
+              <option value="منصة إلكترونية">منصة إلكترونية</option>
+              <option value="سوبر ماركت">سوبر ماركت</option>
+              <option value="صيدلية">صيدلية</option>
+              <option value="التجزئة">التجزئة</option>
+              <option value="ورود">ورود</option>
+              <option value="آخرى">آخرى</option>
             </select>
           </div>
-          <button class="btn btn-lets m-0 w-100 mt-3">Let's Collaborate</button>
+          <button class="btn btn-lets m-0 w-100 mt-3" data-lang="en" id="submit_btn_txt">Submit</button>
 
         </form>
       </div>
@@ -110,14 +137,14 @@
         </div>
         <div class="position-absolute box-info flex-column partner" data-aos="flip-down">
           <div class="d-flex justify-content-between align-items-center w-100 top-title">
-            <span class="fw-600 text-uppercase">business</span>
+            <span class="fw-600 text-uppercase" data-lang="en" id="partner_business_txt">business</span>
             <img src="../images/dots.png" alt="dots">
           </div>
           <div class="d-flex align-items-center w-100">
-            <p class="fw-600 font-32 mb-0 text-uppercase">restaurants</p>
+            <p class="fw-600 font-32 mb-0 text-uppercase" data-lang="en" id="restaurant_txt">restaurants</p>
             <img src="../images/line.png" alt="line" class="line">
           </div>
-          <p>Maximize your business potential with our strategic partnership. Leverage our expertise, resources, and
+          <p data-lang="en" id="partner_strategic_txt">Maximize your business potential with our strategic partnership. Leverage our expertise, resources, and
             tailored solutions for sustainable growth and competitive advantage.</p>
         </div>
       </div>
@@ -133,7 +160,7 @@
               <div class="logo">
                 <img src="../images/logoDash.png" alt="Dash" class="object-contain w-auto">
               </div>
-              <p class="font-18 gray-footer my-3 my-md-5 col-12 col-lg-8">
+              <p class="font-18 gray-footer my-3 my-md-5 col-12 col-lg-8" id="seamless_delivery_logistics_txt" data-lang="en">
                 Seamless Delivery and Logistics، Boost Efficiency Today!
               </p>
               <div class="d-flex flex-wrap icons-social">
@@ -154,14 +181,14 @@
             <div class="col-12 col-md-6 d-flex flex-wrap">
               <div class="col-6 col-md-6 col-lg-5">
                 <ul class="list-unstyled">
-                  <li class="text-white mb-3 mb-md-4">Company</li>
+                  <li class="text-white mb-3 mb-md-4" id="company_txt" data-lang="en">Company</li>
                   <li class="mb-2">
-                    <a href="#" class="gray-footer text-decoration-none">
+                    <a href="#" class="gray-footer text-decoration-none" id="driver_registration_txt" data-lang="en">
                       Driver Registration
                     </a>
                   </li>
                   <li class="mb-2">
-                    <a href="#" class="gray-footer text-decoration-none">
+                    <a href="#" class="gray-footer text-decoration-none" id="collaborate_with_us_txt" data-lang="en">
                       Collaborate with us
                     </a>
                   </li>
@@ -169,14 +196,14 @@
               </div>
               <div class="col-6 col-md-6 col-lg-5">
                 <ul class="list-unstyled">
-                  <li class="text-white mb-3 mb-md-4">About</li>
+                  <li class="text-white mb-3 mb-md-4" id="about_txt" data-lang="en">About</li>
                   <li class="mb-2">
-                    <a href="#" class="gray-footer text-decoration-none">
+                    <a href="#" class="gray-footer text-decoration-none" id="our_story_txt" data-lang="en">
                       Our Story
                     </a>
                   </li>
                   <li class="mb-2">
-                    <a href="#" class="gray-footer text-decoration-none">
+                    <a href="#" class="gray-footer text-decoration-none" id="contact_us_txt" data-lang="en">
                       Contact us
                     </a>
                   </li>
@@ -188,10 +215,10 @@
       </section>
       <div class="last">
         <div class="container d-flex justify-content-between h-100 align-items-center">
-          <p class="m-0">© All rights reserved Dash 2023.</p>
+          <p class="m-0" id="dash_right_txt" data-lang="en">© All rights reserved Dash 2023.</p>
           <div>
-            <a href="" class="text-decoration-none mx-4">Terms & Conditions</a>
-            <a href="" class="text-decoration-none">Privacy Policy </a>
+            <a href="" class="text-decoration-none mx-4" id="terms_and_conditions_txt" data-lang="en">Terms & Conditions</a>
+            <a href="" class="text-decoration-none" id="privacy_policy_txt" data-lang="en">Privacy Policy </a>
           </div>
         </div>
       </div>
@@ -240,6 +267,70 @@
   <!-- custom -->
   <script src="../js/slick.js"></script>
   <script src="../js/script.js"></script>
+
+  <script>
+    // Function to load JSON file
+    function loadJSON(callback) {
+      var xobj = new XMLHttpRequest();
+      xobj.overrideMimeType("application/json");
+      xobj.open('GET', '../index.json', true);
+      xobj.onreadystatechange = function () {
+        if (xobj.readyState == 4 && xobj.status == "200") {
+          callback(JSON.parse(xobj.responseText));
+        }
+      };
+      xobj.send(null);
+    }
+
+    // Function to translate the content
+    function translateContent(translations, lang) {
+      const elements = document.querySelectorAll('[data-lang]')
+      elements.forEach((element) => {
+        const key = element.dataset.lang;
+        if (element.placeholder) {
+          element.placeholder = translations[lang][element.id];
+        } else {
+          element.textContent = translations[lang][element.id];
+          element.dataset.lang = lang; // Update the data-lang attribute
+        }
+      });
+
+      document.getElementById('translateButton').textContent = lang === 'en' ? 'AR' : 'EN';
+      document.documentElement.lang = lang;
+      document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
+      saveLanguagePreference(lang);
+    }
+
+    // Function to save the user's preferred language in local storage
+    function saveLanguagePreference(lang) {
+      localStorage.setItem('preferredLanguage', lang);
+    }
+
+    // Function to load the user's preferred language from local storage
+    function loadLanguagePreference() {
+      const preferredLanguage = localStorage.getItem('preferredLanguage');
+      if (preferredLanguage) {
+        loadJSON(function (translations) {
+          translateContent(translations, preferredLanguage);
+        });
+      }
+    }
+
+    // Event listener for the translate button
+    document.getElementById('translateButton').addEventListener('click', function () {
+      const currentLang = document.getElementById('nav_about_us_txt').dataset.lang;
+      const newLang = currentLang === 'en' ? 'ar' : 'en';
+      loadJSON(function (translations) {
+        translateContent(translations, newLang);
+      });
+    });
+
+    if (!localStorage.getItem('preferredLanguage')) {
+      document.getElementById('translateButton').textContent = 'AR'
+    }
+    // Load the user's preferred language on page load
+    loadLanguagePreference();
+  </script>
 </body>
 
 </html>
