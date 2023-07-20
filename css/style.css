@@ -4,41 +4,150 @@
   box-sizing: border-box;
 }
 
+/* Neue montrea */
+
 @font-face {
-  font-family: Neue_montreal;
-  src: url(../fonts/Neue_montreal/NeueMontreal-Bold.otf),
-    url(../fonts/Neue_montreal/NeueMontreal-BoldItalic.otf),
-    url(../fonts/Neue_montreal/NeueMontreal-Italic.otf),
-    url(../fonts/Neue_montreal/NeueMontreal-Light.otf),
-    url(../fonts/Neue_montreal/NeueMontreal-LightItalic.otf),
-    url(../fonts/Neue_montreal/NeueMontreal-Medium.otf),
-    url(../fonts/Neue_montreal/NeueMontreal-MediumItalic.otf),
-    url(../fonts/Neue_montreal/NeueMontreal-Regular.otf),
+  font-family: 'NeueMontreal-Regular';
+  src: url('../fonts/Neue_montreal/NeueMontreal-Regular.otf') format('opentype'); /* For Regular */
 }
 
 @font-face {
-  font-family: Articulat;
-  src: url(../fonts/Articulat/OTF/ArticulatCF-Bold.otf),
-    url(../fonts/Articulat/OTF/ArticulatCF-BoldOblique.otf),
-    url(../fonts/Articulat/OTF/ArticulatCF-DemiBold.otf),
-    url(../fonts/Articulat/OTF/ArticulatCF-Heavy.otf),
-    url(../fonts/Articulat/OTF/ArticulatCF-Thin.otf),
-    url(../fonts/Articulat/OTF/ArticulatCF-Regular.otf),
-    url(../fonts/Articulat/OTF/ArticulatCF-ExtraBold.otf),
+  font-family: 'NeueMontreal-MediumItalic';
+  src: url('../fonts/Neue_montreal/NeueMontreal-MediumItalic.otf') format('opentype'); /* For MediumItalic */
+}
+
+@font-face {
+  font-family: 'NeueMontreal-Medium';
+  src: url('../fonts/Neue_montreal/NeueMontreal-Medium.otf') format('opentype'); /* For MediumItalic */
+}
+
+@font-face {
+  font-family: 'NeueMontreal-LightItalic';
+  src: url('../fonts/Neue_montreal/NeueMontreal-LightItalic.otf') format('opentype'); /* For MediumItalic */
+}
+
+@font-face {
+  font-family: 'NeueMontreal-Light';
+  src: url('../fonts/Neue_montreal/NeueMontreal-Light.otf') format('opentype'); /* For MediumItalic */
+}
+
+@font-face {
+  font-family: 'NeueMontreal-Italic';
+  src: url('../fonts/Neue_montreal/NeueMontreal-Italic.otf') format('opentype'); /* For MediumItalic */
+}
+
+@font-face {
+  font-family: 'NeueMontreal-BoldItalic';
+  src: url('../fonts/Neue_montreal/NeueMontreal-BoldItalic.otf') format('opentype'); /* For MediumItalic */
+}
+
+@font-face {
+  font-family: 'NeueMontreal-Bold';
+  src: url('../fonts/Neue_montreal/NeueMontreal-Bold.otf') format('opentype'); /* For MediumItalic */
+}
+
+/* Articulat */
+@font-face {
+  font-family: 'Articulat CF';
+  src: url('../fonts/ArticulatCF-DemiBold/ArticulatCF-DemiBold.ttf') format('truetype');
+}
+
+/* IBM */
+
+@font-face {
+  font-family: 'IBM Plex Sans Arabic bold';
+  src: url('../fonts/IBM_Plex_Sans_Arabic/IBMPlexSansArabic-Bold.ttf') format('truetype'); /* For bold */
+}
+
+@font-face {
+  font-family: 'IBM Plex Sans Arabic medium';
+  src: url('../fonts/IBM_Plex_Sans_Arabic/IBMPlexSansArabic-Medium.ttf') format('truetype'); /* For bold */
+}
+
+@font-face {
+  font-family: 'IBM Plex Sans Arabic regular';
+  src: url('../fonts/IBM_Plex_Sans_Arabic/IBMPlexSansArabic-Regular.ttf') format('truetype'); /* For bold */
+}
+
+@font-face {
+  font-family: 'IBM Plex Sans Arabic extraLight';
+  src: url('../fonts/IBM_Plex_Sans_Arabic/IBMPlexSansArabic-ExtraLight.ttf') format('truetype'); /* For extra-light */
+}
+
+@font-face {
+  font-family: 'IBM Plex Sans Arabic ligth';
+  src: url('../fonts/IBM_Plex_Sans_Arabic/IBMPlexSansArabic-Light.ttf') format('truetype'); /* For light */
 }
 
 body {
   overflow-x: hidden;
-
 }
 
-.font_nenu {
-  font-family: Neue_montreal;
+[dir="ltr"] h1, h2, h3 {
+  font-family: Articulat CF, serif;
+  font-weight: 600;
 }
 
-.font_articulat {
-  font-family: Articulat;
+[dir="rtl"] h1, h2, h3 {
+  font-family: IBM Plex Sans Arabic bold, serif;
+  font-weight: 600;
 }
+
+[dir="ltr"] h5 {
+  font-family: NeueMontreal-Regular, serif;
+  font-weight: 500;
+}
+
+[dir='rtl'] h5 {
+  font-family: IBM Plex Sans Arabic regular, serif;
+  font-weight: 500;
+}
+
+[dir="ltr"] p {
+  font-family: NeueMontreal-Regular, serif;
+}
+
+[dir="rtl"] p {
+  font-family: IBM Plex Sans Arabic regular, serif;
+}
+
+[dir="ltr"] span {
+  font-family: NeueMontreal-Medium, serif;
+}
+
+[dir="rtl"] span {
+  font-family: IBM Plex Sans Arabic medium, serif;
+}
+
+[dir="ltr"] li {
+  font-family: NeueMontreal-Medium, serif;
+}
+
+[dir="rtl"] li {
+  font-family: IBM Plex Sans Arabic medium, serif;
+}
+
+[dir="ltr"] a {
+  font-family: NeueMontreal-Regular, serif;
+}
+
+[dir="rtl"] a {
+  font-family: IBM Plex Sans Arabic regular, serif;
+}
+
+/*p {*/
+/*  font-weight: 400;*/
+/*  line-height: 26.4px;*/
+/*  font-family: NeueMontreal-Medium, serif;*/
+/*}*/
+
+/*.font_nenu {*/
+/*  font-family: Neue_montreal;*/
+/*}*/
+
+/*.font_articulat {*/
+/*  font-family: Custom-Articulat;*/
+/*}*/
 
 .navbar-brand {
   width: 61px;
@@ -385,6 +494,10 @@ input {
 
 [dir='ltr'] .box-info .font-32 {
   letter-spacing: -8px;
+}
+
+[dir='rtl'] .box-info .font-32 {
+  letter-spacing: -2px;
 }
 
 .top-title {

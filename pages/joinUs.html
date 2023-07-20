@@ -48,12 +48,12 @@
             </button>
             <div class=" collapse navbar-collapse justify-content-end" id="navbarScroll">
               <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
-                <li class="nav-item"><a class="text-decoration-none active" href="#">About us</a></li>
-                <li class="nav-item"><a class="text-decoration-none" href="#">Driver Registration</a></li>
-                <li class="nav-item"><a class="text-decoration-none" href="#">Driver Registration</a></li>
+                <li class="nav-item"><a class="text-decoration-none" href="./about.html" data-lang="en" id="nav_about_us_txt">About us</a></li>
+                <li class="nav-item"><a class="text-decoration-none active" href="./joinUs.html" data-lang="en" id="nav_driver_Registration_txt">Driver Registration</a></li>
+                <li class="nav-item"><a class="text-decoration-none" href="./partnerWithUs.html" data-lang="en" id="nav_Partner_Registration_txt">Partner Registration </a></li>
               </ul>
-              <button class="btn btn-lang p-0" onclick="toggleLanguage()" id="translationButton">AR</button>
-              <button class="btn btn-lets">Let's Collaborate</button>
+              <button class="btn btn-lang p-0" id="translateButton"></button>
+              <button class="btn btn-lets" id="explore-text" data-lang="en">Let's Collaborate</button>
             </div>
           </div>
         </nav>
@@ -64,39 +64,58 @@
     <!-- form join us -->
     <section class="d-flex flex-wrap-reverse join-us">
       <div class="col-12 col-lg-7 pb-3 pb-lg-0" data-aos="fade-right">
-        <form class="col-10 col-md-7 m-auto py-6">
-          <h2 class="font-40 mb-3 mb-md-4" id="title">Join us and help us revolutionize last-mile delivery</h2>
+        <form class="col-10 col-md-7 m-auto py-6" action="https://api.web3forms.com/submit" method="POST">
+          <input type="hidden" name="access_key" value="f5ad5781-e35c-47c8-9b9b-34bbfee4c70a">
+          <input type="hidden" name="from_name" value="Join our team">
+          <h2 class="font-40 mb-3 mb-md-4" data-lang="en" id="join_with_us_full_txt">Join us and help us revolutionize last-mile delivery</h2>
           <div class="mb-3">
-            <label for="" class="font-14 d-block mb-2 fw-600" id="fullName">Full Name</label>
-            <input type="text" placeholder="Full Name" id="inputFullName">
+            <label for="input_name_txt" class="font-14 d-block mb-2 fw-600" data-lang="en" id="partner_full_name_txt">Full Name</label>
+            <input type="text" placeholder="Full Name" data-lang="en" id="input_name_txt" name="full name">
           </div>
           <div class="mb-3">
-            <label for="" class="font-14 d-block mb-2 fw-600" id="idNumber">ID Number</label>
-            <input type="text" placeholder="ID Number" id="inputIdNumber">
+            <label for="input_id_number_txt" class="font-14 d-block mb-2 fw-600" data-lang="en" id="id_number_txt">ID Number</label>
+            <input type="text" placeholder="ID Number" data-lang="en" id="input_id_number_txt" name="id number">
           </div>
           <div class="mb-3">
-            <label for="" class="font-14 d-block mb-2 fw-600" id="mobile">Mobile Number*</label>
-            <input type="text" placeholder="Mobile Number" id="inputMobile">
+            <label for="input_contact_mobile_txt" class="font-14 d-block mb-2 fw-600" data-lang="en" id="partner_contact_txt">Mobile Number*</label>
+            <input type="text" placeholder="Mobile Number" data-lang="en" id="input_contact_mobile_txt" name="mobile number">
           </div>
           <div class="mb-3">
-            <label for="" class="font-14 d-block mb-2 fw-600" id="email">Email*</label>
-            <input type="email" placeholder="Email" id="inputEmail">
+            <label for="input_driver_email_txt" class="font-14 d-block mb-2 fw-600" data-lang="en" id="driver_email_txt">Email</label>
+            <input type="email" placeholder="Email" data-lang="en" id="input_driver_email_txt" name="email">
           </div>
           <div class="mb-3">
-            <label for="" class="font-14 d-block mb-2 fw-600" id="city">City</label>
-            <select class="form-select">
-              <option selected id="select">Select City</option>
-              <option value="1">One</option>
-              <option value="2">Two</option>
-              <option value="3">Three</option>
+            <label for="partner_select_group_city_txt" class="font-14 d-block mb-2 fw-600" data-lang="en" id="partner_city_txt">City</label>
+            <select class="form-select" name="city" id="partner_select_group_city_txt">
+              <option selected data-lang="en" id="partner_select_city_txt" disabled>Select City</option>
+              <option value="الرياض">الرياض</option>
+              <option value="جدة">جدة</option>
+              <option value="مكة المكرمة">مكة المكرمة</option>
+              <option value="المدينة المنورة">المدينة المنورة</option>
+              <option value="الدمام">الدمام</option>
+              <option value="الطائف">الطائف</option>
+              <option value="تبوك">تبوك</option>
+              <option value="بريدة">بريدة</option>
+              <option value="أبها">أبها</option>
+              <option value="خميس مشيط">خميس مشيط</option>
+              <option value="الخبر">الخبر</option>
+              <option value="الظهران">الظهران</option>
+              <option value="نجران">نجران</option>
+              <option value="حائل">حائل</option>
+              <option value="الجبيل">الجبيل</option>
+              <option value="الهفوف">الهفوف</option>
+              <option value="الأحساء">الأحساء</option>
+              <option value="ينبع">ينبع</option>
+              <option value="القصيم">القصيم</option>
+              <option value="جيزان">جيزان</option>
+              <option value="الخرج">الخرج</option>
             </select>
           </div>
           <div class="mb-3">
-            <label for="" class="font-14 d-block mb-2 fw-600" id="car">Car Type and Model</label>
-            <input type="text" placeholder="Car Type" id="inputCar">
+            <label for="input_car_type_txt" class="font-14 d-block mb-2 fw-600" data-lang="en" id="car_type_txt">Car Type and Model</label>
+            <input type="text" placeholder="Car Type" data-lang="en" id="input_car_type_txt" name="car type">
           </div>
-          <button class="btn btn-lets m-0 w-100 mt-3" id="submit">Submit</button>
-
+          <button class="btn btn-lets m-0 w-100 mt-3" id="submit_btn_txt" data-lang="en">Submit</button>
         </form>
       </div>
       <div class="col-12 col-md-6 col-lg-5 mb-3 mb-lg-0 position-relative">
@@ -105,14 +124,14 @@
         </div>
         <div class="position-absolute box-info flex-column" data-aos="flip-down">
           <div class="d-flex justify-content-between align-items-center w-100 top-title">
-            <span class="fw-600 text-uppercase" id="subTitle">Solution</span>
+            <span class="fw-600 text-uppercase" data-lang="en" id="solution_txt">Solution</span>
             <img src="../images/dots.png" alt="dots">
           </div>
           <div class="d-flex align-items-center w-100">
-            <p class="fw-600 font-32 mb-0 text-uppercase" id="titleBox">Delivery Captions</p>
+            <p class="fw-600 font-32 mb-0 text-uppercase" data-lang="en" id="driver_captions_txt">Delivery Captions</p>
             <img src="../images/line.png" alt="line" class="line">
           </div>
-          <p id="paragraph">Join our team, drive innovation, and elevate last mile delivery with exceptional service. Be a crucial part
+          <p data-lang="en" id="join_our_time_txt">Join our team, drive innovation, and elevate last mile delivery with exceptional service. Be a crucial part
             of our mission to redefine the industry and exceed customer expectations.</p>
         </div>
       </div>
@@ -128,7 +147,7 @@
               <div class="logo">
                 <img src="../images/logoDash.png" alt="Dash" class="object-contain w-auto">
               </div>
-              <p class="font-18 gray-footer my-3 my-md-5 col-12 col-lg-8" id="seamless_delivery_logistics_txt">
+              <p class="font-18 gray-footer my-3 my-md-5 col-12 col-lg-8" id="seamless_delivery_logistics_txt" data-lang="en">
                 Seamless Delivery and Logistics، Boost Efficiency Today!
               </p>
               <div class="d-flex flex-wrap icons-social">
@@ -149,14 +168,14 @@
             <div class="col-12 col-md-6 d-flex flex-wrap">
               <div class="col-6 col-md-6 col-lg-5">
                 <ul class="list-unstyled">
-                  <li class="text-white mb-3 mb-md-4" id="company_txt">Dash</li>
+                  <li class="text-white mb-3 mb-md-4" id="company_txt" data-lang="en">Company</li>
                   <li class="mb-2">
-                    <a href="#" class="gray-footer text-decoration-none" id="driver_registration_txt">
+                    <a href="#" class="gray-footer text-decoration-none" id="driver_registration_txt" data-lang="en">
                       Driver Registration
                     </a>
                   </li>
                   <li class="mb-2">
-                    <a href="#" class="gray-footer text-decoration-none" id="collaborate_with_us_txt">
+                    <a href="#" class="gray-footer text-decoration-none" id="collaborate_with_us_txt" data-lang="en">
                       Collaborate with us
                     </a>
                   </li>
@@ -164,14 +183,14 @@
               </div>
               <div class="col-6 col-md-6 col-lg-5">
                 <ul class="list-unstyled">
-                  <li class="text-white mb-3 mb-md-4" id="about_txt">About</li>
+                  <li class="text-white mb-3 mb-md-4" id="about_txt" data-lang="en">About</li>
                   <li class="mb-2">
-                    <a href="#" class="gray-footer text-decoration-none" id="our_story_txt">
+                    <a href="#" class="gray-footer text-decoration-none" id="our_story_txt" data-lang="en">
                       Our Story
                     </a>
                   </li>
                   <li class="mb-2">
-                    <a href="#" class="gray-footer text-decoration-none" id="contact_us_txt">
+                    <a href="#" class="gray-footer text-decoration-none" id="contact_us_txt" data-lang="en">
                       Contact us
                     </a>
                   </li>
@@ -183,10 +202,10 @@
       </section>
       <div class="last">
         <div class="container d-flex justify-content-between h-100 align-items-center">
-          <p class="m-0" id="dash_right_txt">© All rights reserved Dash 2023.</p>
+          <p class="m-0" id="dash_right_txt" data-lang="en">© All rights reserved Dash 2023.</p>
           <div>
-            <a href="" class="text-decoration-none mx-4" id="terms_and_conditions_txt">Terms & Conditions</a>
-            <a href="" class="text-decoration-none" id="privacy_policy_txt">Privacy Policy </a>
+            <a href="" class="text-decoration-none mx-4" id="terms_and_conditions_txt" data-lang="en">Terms & Conditions</a>
+            <a href="" class="text-decoration-none" id="privacy_policy_txt" data-lang="en">Privacy Policy </a>
           </div>
         </div>
       </div>
@@ -236,6 +255,70 @@
   <script src="../js/joinUs.js"></script>
   <script src="../js/slick.js"></script>
   <script src="../js/script.js"></script>
+
+  <script>
+    // Function to load JSON file
+    function loadJSON(callback) {
+      var xobj = new XMLHttpRequest();
+      xobj.overrideMimeType("application/json");
+      xobj.open('GET', '../index.json', true);
+      xobj.onreadystatechange = function () {
+        if (xobj.readyState == 4 && xobj.status == "200") {
+          callback(JSON.parse(xobj.responseText));
+        }
+      };
+      xobj.send(null);
+    }
+
+    // Function to translate the content
+    function translateContent(translations, lang) {
+      const elements = document.querySelectorAll('[data-lang]')
+      elements.forEach((element) => {
+        const key = element.dataset.lang;
+        if (element.placeholder) {
+          element.placeholder = translations[lang][element.id];
+        } else {
+          element.textContent = translations[lang][element.id];
+          element.dataset.lang = lang; // Update the data-lang attribute
+        }
+      });
+
+      document.getElementById('translateButton').textContent = lang === 'en' ? 'AR' : 'EN';
+      document.documentElement.lang = lang;
+      document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
+      saveLanguagePreference(lang);
+    }
+
+    // Function to save the user's preferred language in local storage
+    function saveLanguagePreference(lang) {
+      localStorage.setItem('preferredLanguage', lang);
+    }
+
+    // Function to load the user's preferred language from local storage
+    function loadLanguagePreference() {
+      const preferredLanguage = localStorage.getItem('preferredLanguage');
+      if (preferredLanguage) {
+        loadJSON(function (translations) {
+          translateContent(translations, preferredLanguage);
+        });
+      }
+    }
+
+    // Event listener for the translate button
+    document.getElementById('translateButton').addEventListener('click', function () {
+      const currentLang = document.getElementById('nav_about_us_txt').dataset.lang;
+      const newLang = currentLang === 'en' ? 'ar' : 'en';
+      loadJSON(function (translations) {
+        translateContent(translations, newLang);
+      });
+    });
+
+    if (!localStorage.getItem('preferredLanguage')) {
+      document.getElementById('translateButton').textContent = 'AR'
+    }
+    // Load the user's preferred language on page load
+    loadLanguagePreference();
+  </script>
 </body>
 
 </html>
