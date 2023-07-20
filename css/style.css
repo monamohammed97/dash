@@ -521,7 +521,7 @@ input {
   margin: 0 1rem;
 }
 
-.box-info .font-32 {
+[dir='ltr'] .box-info .font-32 {
   letter-spacing: -8px;
 }
 
