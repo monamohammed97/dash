@@ -1,7 +1,8 @@
 $(".business-slick").slick({
   infinite: true,
+  lazyLoad: 'ondemand',
   slidesToShow: 3,
-  slidesToScroll: 1,
+  slidesToScroll: 3,
   // autoplay: true,
   autoplaySpeed: 2000,
   arrows: true,
