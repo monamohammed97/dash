@@ -83,13 +83,34 @@ body {
   overflow-x: hidden;
 }
 
-[dir="ltr"] h1, h2, h3 {
+
+[dir="rtl"] h1 {
+  font-family: IBM Plex Sans Arabic bold, serif;
+  font-weight: 600;
+}
+
+[dir="ltr"] h1 {
   font-family: Articulat CF, serif;
   font-weight: 600;
 }
 
-[dir="rtl"] h1, h2, h3 {
+[dir="rtl"] h2 {
   font-family: IBM Plex Sans Arabic bold, serif;
+  font-weight: 600;
+}
+
+[dir="ltr"] h2 {
+  font-family: Articulat CF, serif;
+  font-weight: 600;
+}
+
+[dir="rtl"] h3 {
+  font-family: IBM Plex Sans Arabic bold, serif;
+  font-weight: 600;
+}
+
+[dir="ltr"] h3 {
+  font-family: Articulat CF, serif;
   font-weight: 600;
 }
 
@@ -132,6 +153,14 @@ body {
 }
 
 [dir="rtl"] a {
+  font-family: IBM Plex Sans Arabic regular, serif;
+}
+
+[dir="ltr"] button {
+  font-family: NeueMontreal-Regular, serif;
+}
+
+[dir="rtl"] button {
   font-family: IBM Plex Sans Arabic regular, serif;
 }
 
