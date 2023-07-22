@@ -6,6 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dash</title>
+  <link rel="icon" type="image/x-icon" href="../images/favicon/Favicon.png">
+
   <!-- fontawsome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
     integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
@@ -42,18 +44,27 @@
               <img src="../images/Dashwhite.png" alt="Dash" class="white">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
-                    aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+              aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
               <span class="fa-solid fa-xmark"></span>
             </button>
             <div class=" collapse navbar-collapse justify-content-end" id="navbarScroll">
               <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
-                <li class="nav-item"><a class="text-decoration-none" href="./about.html" data-lang="en" id="nav_about_us_txt">About us</a></li>
-                <li class="nav-item"><a class="text-decoration-none" href="./joinUs.html" data-lang="en" id="nav_driver_Registration_txt">Driver Registration</a></li>
-                <li class="nav-item"><a class="text-decoration-none active" href="./partnerWithUs.html" data-lang="en" id="nav_Partner_Registration_txt">Partner Registration </a></li>
+                <li class="nav-item home-display">
+                  <a class="text-decoration-none" href="../index.html" data-lang="en" id="nav_home_txt">
+                    Home
+                  </a>
+                </li>
+                <li class="nav-item"><a class="text-decoration-none" href="./about.html" data-lang="en"
+                    id="nav_about_us_txt">About us</a></li>
+                <li class="nav-item"><a class="text-decoration-none" href="./joinUs.html" data-lang="en"
+                    id="nav_driver_Registration_txt">Driver Registration</a></li>
+                <li class="nav-item"><a class="text-decoration-none active" href="./partnerWithUs.html" data-lang="en"
+                    id="nav_Partner_Registration_txt">Partner Registration </a></li>
               </ul>
               <button class="btn btn-lang p-0" id="translateButton"></button>
-              <a class="text-decoration-none" href="./partnerWithUs.html"><button class="btn btn-lets" id="explore-text" data-lang="en">Let's Collaborate</button></a>
+              <a class="text-decoration-none" href="./partnerWithUs.html"><button class="btn btn-lets" id="explore-text"
+                  data-lang="en">Let's Collaborate</button></a>
             </div>
           </div>
         </nav>
@@ -67,27 +78,35 @@
         <form class="col-10 col-md-7 m-auto py-6" action="https://api.web3forms.com/submit" method="POST">
           <input type="hidden" name="access_key" value="f5ad5781-e35c-47c8-9b9b-34bbfee4c70a">
           <input type="hidden" name="from_name" value="partner with us">
-          <h2 class="font-40 mb-3 mb-md-4" data-lang="en" id="partner_with_us_full_txt">Partner with us to reach your full potential.</h2>
+          <h2 class="font-40 mb-3 mb-md-4" data-lang="en" id="partner_with_us_full_txt">Partner with us to reach your
+            full potential.</h2>
           <div class="mb-3">
-            <label for="input_name_txt" class="font-14 d-block mb-2 fw-600" data-lang="en" id="partner_full_name_txt">Full Name</label>
+            <label for="input_name_txt" class="font-14 d-block mb-2 fw-600" data-lang="en"
+              id="partner_full_name_txt">Full Name</label>
             <input type="text" placeholder="Full Name" data-lang="en" id="input_name_txt" name="full name">
           </div>
 
           <div class="mb-3">
-            <label for="input_email_txt" class="font-14 d-block mb-2 fw-600" data-lang="en" id="partner_email_txt">Email</label>
+            <label for="input_email_txt" class="font-14 d-block mb-2 fw-600" data-lang="en"
+              id="partner_email_txt">Email</label>
             <input type="email" placeholder="Email" data-lang="en" id="input_email_txt" name="email">
           </div>
           <div class="mb-3">
-            <label for="input_company_txt" class="font-14 d-block mb-2 fw-600" data-lang="en" id="partner_company_txt">Company name</label>
-            <input type="text" placeholder="Enter your company name " data-lang="en" id="input_company_txt" name="company name">
+            <label for="input_company_txt" class="font-14 d-block mb-2 fw-600" data-lang="en"
+              id="partner_company_txt">Company name</label>
+            <input type="text" placeholder="Enter your company name " data-lang="en" id="input_company_txt"
+              name="company name">
           </div>
           <div class="mb-3">
-            <label for="input_contact_mobile_txt" class="font-14 d-block mb-2 fw-600" data-lang="en" id="partner_contact_txt">Contact Mobile Number</label>
-            <input type="text" placeholder=" Mobile Number" data-lang="en" id="input_contact_mobile_txt" name="mobile number">
+            <label for="input_contact_mobile_txt" class="font-14 d-block mb-2 fw-600" data-lang="en"
+              id="partner_contact_txt">Contact Mobile Number</label>
+            <input type="text" placeholder=" Mobile Number" data-lang="en" id="input_contact_mobile_txt"
+              name="mobile number">
           </div>
 
           <div class="mb-3">
-            <label for="partner_select_group_city_txt" class="font-14 d-block mb-2 fw-600" data-lang="en" id="partner_city_txt">City</label>
+            <label for="partner_select_group_city_txt" class="font-14 d-block mb-2 fw-600" data-lang="en"
+              id="partner_city_txt">City</label>
             <select class="form-select" name="city" id="partner_select_group_city_txt">
               <option selected data-lang="en" id="partner_select_city_txt" disabled>Select City</option>
               <option value="الرياض">الرياض</option>
@@ -114,9 +133,11 @@
             </select>
           </div>
           <div class="mb-3">
-            <label for="partner_select_business_type_group_txt" class="font-14 d-block mb-2 fw-600" data-lang="en" id="partner_business_type_txt">Business Type</label>
+            <label for="partner_select_business_type_group_txt" class="font-14 d-block mb-2 fw-600" data-lang="en"
+              id="partner_business_type_txt">Business Type</label>
             <select class="form-select" name="business type" id="partner_select_business_type_group_txt">
-              <option selected data-lang="en" id="partner_select_business_type_txt" disabled>Select business type</option>
+              <option selected data-lang="en" id="partner_select_business_type_txt" disabled>Select business type
+              </option>
               <option value="تقديم الطعام">تقديم الطعام</option>
               <option value="مطعم">مطعم</option>
               <option value="أسطول توصيل">أسطول توصيل</option>
@@ -145,7 +166,8 @@
             <p class="fw-600 font-32 mb-0 text-uppercase" data-lang="en" id="restaurant_txt">restaurants</p>
             <img src="../images/line.png" alt="line" class="line">
           </div>
-          <p data-lang="en" id="partner_strategic_txt">Maximize your business potential with our strategic partnership. Leverage our expertise, resources, and
+          <p data-lang="en" id="partner_strategic_txt">Maximize your business potential with our strategic partnership.
+            Leverage our expertise, resources, and
             tailored solutions for sustainable growth and competitive advantage.</p>
         </div>
       </div>
@@ -161,20 +183,21 @@
               <div class="logo">
                 <img src="../images/logoDash.png" alt="Dash" class="object-contain w-auto">
               </div>
-              <p class="font-18 gray-footer my-3 my-md-5 col-12 col-lg-8" id="seamless_delivery_logistics_txt" data-lang="en">
+              <p class="font-18 gray-footer my-3 my-md-5 col-12 col-lg-8" id="seamless_delivery_logistics_txt"
+                data-lang="en">
                 Seamless Delivery and Logistics، Boost Efficiency Today!
               </p>
               <div class="d-flex flex-wrap icons-social">
-                <a href="" class="social">
+                <!-- <a href="" class="social">
                   <img class="object-contain" src="../images/facebook.png" alt="facebook">
-                </a>
-                <a href="" class="social">
+                </a> -->
+                <a href="https://twitter.com/dash_logistic" target="_blank" class="social">
                   <img class="object-contain" src="../images/twitter.png" alt="twitter">
                 </a>
-                <a href="" class="social">
+                <a href="https://www.instagram.com/dash_logistic/" target="_blank" class="social">
                   <img class="object-contain" src="../images/instagram.png" alt="instagram">
                 </a>
-                <a href="" class="social">
+                <a href="https://www.linkedin.com/company/dashanywhere/about/" target="_blank" class="social">
                   <img class="object-contain" src="../images/linkedin.png" alt="linkedin">
                 </a>
               </div>
@@ -184,12 +207,14 @@
                 <ul class="list-unstyled">
                   <li class="text-white mb-3 mb-md-4" id="company_txt" data-lang="en">Company</li>
                   <li class="mb-2">
-                    <a href="./joinUs.html" class="gray-footer text-decoration-none" id="driver_registration_txt" data-lang="en">
+                    <a href="./joinUs.html" class="gray-footer text-decoration-none" id="driver_registration_txt"
+                      data-lang="en">
                       Driver Registration
                     </a>
                   </li>
                   <li class="mb-2">
-                    <a href="./partnerWithUs.html" class="gray-footer text-decoration-none" id="collaborate_with_us_txt" data-lang="en">
+                    <a href="./partnerWithUs.html" class="gray-footer text-decoration-none" id="collaborate_with_us_txt"
+                      data-lang="en">
                       Collaborate with us
                     </a>
                   </li>
@@ -204,7 +229,7 @@
                     </a>
                   </li>
                   <li class="mb-2">
-                    <a href="#" class="gray-footer text-decoration-none" id="contact_us_txt" data-lang="en">
+                    <a href="mailto:Info@dashsaudi.com" class="gray-footer text-decoration-none" id="contact_us_txt" data-lang="en">
                       Contact us
                     </a>
                   </li>
@@ -218,7 +243,8 @@
         <div class="container d-flex justify-content-between h-100 align-items-center">
           <p class="m-0" id="dash_right_txt" data-lang="en">© All rights reserved Dash 2023.</p>
           <div>
-            <a href="" class="text-decoration-none mx-4" id="terms_and_conditions_txt" data-lang="en">Terms & Conditions</a>
+            <a href="" class="text-decoration-none mx-4" id="terms_and_conditions_txt" data-lang="en">Terms &
+              Conditions</a>
             <a href="" class="text-decoration-none" id="privacy_policy_txt" data-lang="en">Privacy Policy </a>
           </div>
         </div>
